@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FAD6B927-68A0-4B48-B468-CB4EC07CF040}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>XiaobaiEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\external\spidermonkey\include\win32;Include;google-gumbo-parser\visualc\include;libogg-1.3.2\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\external\spidermonkey\include\win32;Include;google-gumbo-parser\visualc\include;libogg-1.3.2\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;MARKUP_STL;_CRT_SECURE_NO_WARNINGS;FPM_DEFAULT;HAVE_CONFIG_H;ASO_ZEROCHECK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>false</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\external\spidermonkey\prebuilt\win32;..\DXSDK\Lib;..\external\websockets\prebuilt\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mozjs-33.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib</IgnoreSpecificDefaultLibraries>
+      <Profile>true</Profile>
+      <AssemblyDebug>true</AssemblyDebug>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;MARKUP_STL;_CRT_SECURE_NO_WARNINGS;FPM_DEFAULT;HAVE_CONFIG_H;ASO_ZEROCHECK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\external\spidermonkey\prebuilt\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mozjs-33.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\external\spidermonkey\include\win32\js-config.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsalloc.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsapi.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsbytecode.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsclist.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\jscpucfg.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsfriendapi.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsperf.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsprf.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsprototypes.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsproxy.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\jspubtd.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\jstypes.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsversion.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\jswrapper.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Alignment.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\AllocPolicy.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Array.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\ArrayUtils.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Assertions.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Atomics.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Attributes.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\BinarySearch.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\BloomFilter.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Casting.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\ChaosMode.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Char16.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\CheckedInt.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Compiler.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Compression.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Constants.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\DebugOnly.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Decimal.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Endian.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\EnumeratedArray.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\EnumSet.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\FloatingPoint.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\GuardObjects.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\HashFunctions.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\IntegerPrintfMacros.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\IntegerTypeTraits.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Likely.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\LinkedList.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\MacroArgs.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\MacroForEach.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\MathAlgorithms.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Maybe.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\MaybeOneOf.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\MemoryChecking.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\MemoryReporting.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Move.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\MSIntTypes.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\NullPtr.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\NumericLimits.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Pair.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\PodOperations.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Poison.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Range.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\RangedPtr.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\ReentrancyGuard.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\RefCountType.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\RefPtr.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\RollingMean.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Scoped.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\SHA1.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\SplayTree.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\TaggedAnonymousMemory.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\TemplateLib.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\ThreadLocal.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\ToString.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\TypedEnum.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\TypedEnumBits.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\TypedEnumInternal.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Types.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\TypeTraits.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\UniquePtr.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Vector.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\WeakPtr.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\WindowsVersion.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozzconf.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\zconf.h" />
+    <ClInclude Include="..\external\spidermonkey\include\win32\zlib.h" />
+    <ClInclude Include="ArrayBuffer.h" />
+    <ClInclude Include="AudioInterface.h" />
+    <ClInclude Include="Base64.h" />
+    <ClInclude Include="Events.h" />
+    <ClInclude Include="FileIOInterface.h" />
+    <ClInclude Include="GlobalClass.h" />
+    <ClInclude Include="google-gumbo-parser\src\attribute.h" />
+    <ClInclude Include="google-gumbo-parser\src\char_ref.h" />
+    <ClInclude Include="google-gumbo-parser\src\error.h" />
+    <ClInclude Include="google-gumbo-parser\src\gumbo.h" />
+    <ClInclude Include="google-gumbo-parser\src\insertion_mode.h" />
+    <ClInclude Include="google-gumbo-parser\src\parser.h" />
+    <ClInclude Include="google-gumbo-parser\src\string_buffer.h" />
+    <ClInclude Include="google-gumbo-parser\src\string_piece.h" />
+    <ClInclude Include="google-gumbo-parser\src\tag_enum.h" />
+    <ClInclude Include="google-gumbo-parser\src\tag_gperf.h" />
+    <ClInclude Include="google-gumbo-parser\src\tag_sizes.h" />
+    <ClInclude Include="google-gumbo-parser\src\tag_strings.h" />
+    <ClInclude Include="google-gumbo-parser\src\tokenizer.h" />
+    <ClInclude Include="google-gumbo-parser\src\tokenizer_states.h" />
+    <ClInclude Include="google-gumbo-parser\src\token_type.h" />
+    <ClInclude Include="google-gumbo-parser\src\utf8.h" />
+    <ClInclude Include="google-gumbo-parser\src\util.h" />
+    <ClInclude Include="google-gumbo-parser\src\vector.h" />
+    <ClInclude Include="google-gumbo-parser\visualc\include\strings.h" />
+    <ClInclude Include="HTML5Color.h" />
+    <ClInclude Include="HtmlAttributes.h" />
+    <ClInclude Include="HtmlAudio.h" />
+    <ClInclude Include="HtmlAudioBuffer.h" />
+    <ClInclude Include="HtmlAudioBufferSourceNode.h" />
+    <ClInclude Include="HtmlAudioContext.h" />
+    <ClInclude Include="HtmlAudioDestinationNode.h" />
+    <ClInclude Include="HtmlAudioNode.h" />
+    <ClInclude Include="HtmlAudioParam.h" />
+    <ClInclude Include="HtmlCanvas.h" />
+    <ClInclude Include="HtmlCanvasGradient.h" />
+    <ClInclude Include="HtmlCanvasRenderingContext2D.h" />
+    <ClInclude Include="HtmlConsole.h" />
+    <ClInclude Include="HtmlCookie.h" />
+    <ClInclude Include="HtmlDiv.h" />
+    <ClInclude Include="HtmlDocument.h" />
+    <ClInclude Include="HtmlDomParser.h" />
+    <ClInclude Include="HtmlElement.h" />
+    <ClInclude Include="HtmlEvent.h" />
+    <ClInclude Include="HtmlEventTarget.h" />
+    <ClInclude Include="HtmlGainNode.h" />
+    <ClInclude Include="HtmlIFrame.h" />
+    <ClInclude Include="HtmlImageData.h" />
+    <ClInclude Include="HtmlImgClass.h" />
+    <ClInclude Include="HtmlInput.h" />
+    <ClInclude Include="HtmlLI.h" />
+    <ClInclude Include="HtmlLinearGradient.h" />
+    <ClInclude Include="HtmlLink.h" />
+    <ClInclude Include="HtmlLocalStorage.h" />
+    <ClInclude Include="HtmlLocation.h" />
+    <ClInclude Include="HtmlNavigator.h" />
+    <ClInclude Include="HtmlP.h" />
+    <ClInclude Include="HtmlRect.h" />
+    <ClInclude Include="HtmlScreen.h" />
+    <ClInclude Include="HtmlScript.h" />
+    <ClInclude Include="HtmlSessionStorage.h" />
+    <ClInclude Include="HtmlSpan.h" />
+    <ClInclude Include="HtmlStyle.h" />
+    <ClInclude Include="HtmlStyleElement.h" />
+    <ClInclude Include="HtmlTextarea.h" />
+    <ClInclude Include="HtmlTextNode.h" />
+    <ClInclude Include="HtmlUL.h" />
+    <ClInclude Include="HtmlWebGLRenderingContext.h" />
+    <ClInclude Include="HtmlWebSocket.h" />
+    <ClInclude Include="HtmlXMLHttpRequest.h" />
+    <ClInclude Include="HttpFileCache.h" />
+    <ClInclude Include="HttpParser.h" />
+    <ClInclude Include="HttpRequestInterface.h" />
+    <ClInclude Include="ImageDecoderInterface.h" />
+    <ClInclude Include="Include\esUtil.h" />
+    <ClInclude Include="Include\esUtil_win.h" />
+    <ClInclude Include="JSVMInterface.h" />
+    <ClInclude Include="libmad-0.15.1b\bit.h" />
+    <ClInclude Include="libmad-0.15.1b\config.h" />
+    <ClInclude Include="libmad-0.15.1b\decoder.h" />
+    <ClInclude Include="libmad-0.15.1b\fixed.h" />
+    <ClInclude Include="libmad-0.15.1b\frame.h" />
+    <ClInclude Include="libmad-0.15.1b\global.h" />
+    <ClInclude Include="libmad-0.15.1b\huffman.h" />
+    <ClInclude Include="libmad-0.15.1b\layer12.h" />
+    <ClInclude Include="libmad-0.15.1b\layer3.h" />
+    <ClInclude Include="libmad-0.15.1b\stream.h" />
+    <ClInclude Include="libmad-0.15.1b\synth.h" />
+    <ClInclude Include="libmad-0.15.1b\timer.h" />
+    <ClInclude Include="libmad-0.15.1b\version.h" />
+    <ClInclude Include="libogg-1.3.2\include\ogg\ogg.h" />
+    <ClInclude Include="libogg-1.3.2\include\ogg\os_types.h" />
+    <ClInclude Include="Macros.h" />
+    <ClInclude Include="MadDecodec.h" />
+    <ClInclude Include="Markup.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="Mutexs.h" />
+    <ClInclude Include="OpenGl.h" />
+    <ClInclude Include="OpenGl2.h" />
+    <ClInclude Include="OpenglContext.h" />
+    <ClInclude Include="OpenglFBO.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SocketInterface.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SystemInterface.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="win32\AcmCodec.h" />
+    <ClInclude Include="win32\AudioWIN32.h" />
+    <ClInclude Include="win32\DSoundOut.h" />
+    <ClInclude Include="win32\HttpRequestWIN32.h" />
+    <ClInclude Include="win32\ImageDecoderWIN32.h" />
+    <ClInclude Include="win32\SystemInterfaceWIN32.h" />
+    <ClInclude Include="XiaobaiEngine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ArrayBuffer.cpp" />
+    <ClCompile Include="AudioInterface.cpp" />
+    <ClCompile Include="Base64.cpp" />
+    <ClCompile Include="Events.cpp" />
+    <ClCompile Include="FileIOInterface.cpp" />
+    <ClCompile Include="GlobalClass.cpp" />
+    <ClCompile Include="google-gumbo-parser\src\attribute.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\char_ref.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\error.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\parser.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\string_buffer.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\string_piece.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\tag.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\tokenizer.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\utf8.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\util.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\vector.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="HTML5Color.cpp" />
+    <ClCompile Include="HtmlAttributes.cpp" />
+    <ClCompile Include="HtmlAudio.cpp" />
+    <ClCompile Include="HtmlAudioBuffer.cpp" />
+    <ClCompile Include="HtmlAudioBufferSourceNode.cpp" />
+    <ClCompile Include="HtmlAudioContext.cpp" />
+    <ClCompile Include="HtmlAudioDestinationNode.cpp" />
+    <ClCompile Include="HtmlAudioNode.cpp" />
+    <ClCompile Include="HtmlAudioParam.cpp" />
+    <ClCompile Include="HtmlCanvas.cpp" />
+    <ClCompile Include="HtmlCanvasGradient.cpp" />
+    <ClCompile Include="HtmlCanvasRenderingContext2D.cpp" />
+    <ClCompile Include="HtmlConsole.cpp" />
+    <ClCompile Include="HtmlCookie.cpp" />
+    <ClCompile Include="HtmlDiv.cpp" />
+    <ClCompile Include="HtmlDocument.cpp" />
+    <ClCompile Include="HtmlDomParser.cpp" />
+    <ClCompile Include="HtmlElement.cpp" />
+    <ClCompile Include="HtmlEvent.cpp" />
+    <ClCompile Include="HtmlEventTarget.cpp" />
+    <ClCompile Include="HtmlGainNode.cpp" />
+    <ClCompile Include="HtmlIFrame.cpp" />
+    <ClCompile Include="HtmlImageData.cpp" />
+    <ClCompile Include="HtmlImgClass.cpp" />
+    <ClCompile Include="HtmlInput.cpp" />
+    <ClCompile Include="HtmlLI.cpp" />
+    <ClCompile Include="HtmlLinearGradient.cpp" />
+    <ClCompile Include="HtmlLink.cpp" />
+    <ClCompile Include="HtmlLocalStorage.cpp" />
+    <ClCompile Include="HtmlLocation.cpp" />
+    <ClCompile Include="HtmlNavigator.cpp" />
+    <ClCompile Include="HtmlP.cpp" />
+    <ClCompile Include="HtmlRect.cpp" />
+    <ClCompile Include="HtmlScreen.cpp" />
+    <ClCompile Include="HtmlScript.cpp" />
+    <ClCompile Include="HtmlSessionStorage.cpp" />
+    <ClCompile Include="HtmlSpan.cpp" />
+    <ClCompile Include="HtmlStyle.cpp" />
+    <ClCompile Include="HtmlStyleElement.cpp" />
+    <ClCompile Include="HtmlTextarea.cpp" />
+    <ClCompile Include="HtmlTextNode.cpp" />
+    <ClCompile Include="HtmlUL.cpp" />
+    <ClCompile Include="HtmlWebGLRenderingContext.cpp" />
+    <ClCompile Include="HtmlWebSocket.cpp" />
+    <ClCompile Include="HtmlXMLHttpRequest.cpp" />
+    <ClCompile Include="HttpFileCache.cpp" />
+    <ClCompile Include="HttpParser.cpp" />
+    <ClCompile Include="HttpRequestInterface.cpp" />
+    <ClCompile Include="ImageDecoderInterface.cpp" />
+    <ClCompile Include="Include\esShader.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Include\esShapes.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Include\esTransform.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Include\esUtil.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Include\Win32\esUtil_TGA.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Include\Win32\esUtil_win32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="JSVMInterface.cpp" />
+    <ClCompile Include="libmad-0.15.1b\bit.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\decoder.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\fixed.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\frame.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\huffman.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\layer12.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\layer3.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\stream.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\synth.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\timer.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\version.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="libogg-1.3.2\src\bitwise.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="libogg-1.3.2\src\framing.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="MadDecodec.cpp" />
+    <ClCompile Include="Markup.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Mutexs.cpp" />
+    <ClCompile Include="OpenGl.cpp" />
+    <ClCompile Include="OpenGl2.cpp" />
+    <ClCompile Include="OpenglContext.cpp" />
+    <ClCompile Include="OpenglFBO.cpp" />
+    <ClCompile Include="SocketInterface.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SystemInterface.cpp" />
+    <ClCompile Include="win32\AcmCodec.cpp" />
+    <ClCompile Include="win32\AudioWIN32.cpp" />
+    <ClCompile Include="win32\DSoundOut.cpp" />
+    <ClCompile Include="win32\HttpRequestWIN32.cpp" />
+    <ClCompile Include="win32\ImageDecoderWIN32.cpp" />
+    <ClCompile Include="win32\SystemInterfaceWIN32.cpp" />
+    <ClCompile Include="XiaobaiEngine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="XiaobaiEngine.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico" />
+    <Image Include="XiaobaiEngine.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,946 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{9530dbc0-f7ef-4e78-9edc-05f1607c0db3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="spidermonkey">
+      <UniqueIdentifier>{a60093d5-bacd-424c-ac49-aba8f0fff3f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="google-gumbo-parser">
+      <UniqueIdentifier>{c19855ee-4055-4623-b7d9-e71780f561b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libmad">
+      <UniqueIdentifier>{3b2b092b-9f59-4a64-b770-02b58afe77d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libogg">
+      <UniqueIdentifier>{2221f85e-1ecc-4006-b988-e7c221b93ac1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XiaobaiEngine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JSVMInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlImgClass.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalClass.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlEventTarget.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlElement.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlDocument.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlCanvas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlCanvasRenderingContext2D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HTML5Color.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenglFBO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageDecoderInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenglContext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlWebGLRenderingContext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlLocation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlNavigator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlDomParser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Markup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlXMLHttpRequest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileIOInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpRequestInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlImageData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlScript.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlAudio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlDiv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlStyle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlInput.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlLocalStorage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayBuffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\AcmCodec.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\AudioWIN32.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\DSoundOut.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\HttpRequestWIN32.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\ImageDecoderWIN32.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\SystemInterfaceWIN32.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsalloc.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsapi.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsbytecode.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsclist.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\js-config.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\jscpucfg.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsfriendapi.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsperf.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsprf.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsprototypes.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsproxy.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\jspubtd.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\jstypes.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\jsversion.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\jswrapper.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozzconf.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\zconf.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\zlib.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Alignment.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\AllocPolicy.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Array.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\ArrayUtils.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Assertions.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Atomics.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Attributes.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\BinarySearch.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\BloomFilter.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Casting.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\ChaosMode.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Char16.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\CheckedInt.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Compiler.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Compression.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Constants.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\DebugOnly.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Decimal.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Endian.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\EnumeratedArray.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\EnumSet.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\FloatingPoint.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\GuardObjects.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\HashFunctions.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\IntegerPrintfMacros.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\IntegerTypeTraits.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Likely.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\LinkedList.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\MacroArgs.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\MacroForEach.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\MathAlgorithms.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Maybe.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\MaybeOneOf.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\MemoryChecking.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\MemoryReporting.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Move.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\MSIntTypes.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\NullPtr.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\NumericLimits.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Pair.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\PodOperations.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Poison.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Range.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\RangedPtr.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\ReentrancyGuard.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\RefCountType.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\RefPtr.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\RollingMean.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Scoped.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\SHA1.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\SplayTree.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\TaggedAnonymousMemory.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\TemplateLib.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\ThreadLocal.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\ToString.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\TypedEnum.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\TypedEnumBits.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\TypedEnumInternal.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Types.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\TypeTraits.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\UniquePtr.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\Vector.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\WeakPtr.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\spidermonkey\include\win32\mozilla\WindowsVersion.h">
+      <Filter>spidermonkey</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\esUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\esUtil_win.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\attribute.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\char_ref.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\error.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\gumbo.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\insertion_mode.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\parser.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\string_buffer.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\string_piece.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\tag_enum.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\tag_gperf.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\tag_sizes.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\tag_strings.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\token_type.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\tokenizer.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\tokenizer_states.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\utf8.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\util.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\src\vector.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="google-gumbo-parser\visualc\include\strings.h">
+      <Filter>google-gumbo-parser</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlCanvasGradient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlLinearGradient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlCookie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlAudioContext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlGainNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlAudioNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libmad-0.15.1b\bit.h">
+      <Filter>libmad</Filter>
+    </ClInclude>
+    <ClInclude Include="libmad-0.15.1b\decoder.h">
+      <Filter>libmad</Filter>
+    </ClInclude>
+    <ClInclude Include="libmad-0.15.1b\fixed.h">
+      <Filter>libmad</Filter>
+    </ClInclude>
+    <ClInclude Include="libmad-0.15.1b\frame.h">
+      <Filter>libmad</Filter>
+    </ClInclude>
+    <ClInclude Include="libmad-0.15.1b\global.h">
+      <Filter>libmad</Filter>
+    </ClInclude>
+    <ClInclude Include="libmad-0.15.1b\huffman.h">
+      <Filter>libmad</Filter>
+    </ClInclude>
+    <ClInclude Include="libmad-0.15.1b\layer3.h">
+      <Filter>libmad</Filter>
+    </ClInclude>
+    <ClInclude Include="libmad-0.15.1b\layer12.h">
+      <Filter>libmad</Filter>
+    </ClInclude>
+    <ClInclude Include="libmad-0.15.1b\stream.h">
+      <Filter>libmad</Filter>
+    </ClInclude>
+    <ClInclude Include="libmad-0.15.1b\synth.h">
+      <Filter>libmad</Filter>
+    </ClInclude>
+    <ClInclude Include="libmad-0.15.1b\timer.h">
+      <Filter>libmad</Filter>
+    </ClInclude>
+    <ClInclude Include="libmad-0.15.1b\version.h">
+      <Filter>libmad</Filter>
+    </ClInclude>
+    <ClInclude Include="libmad-0.15.1b\config.h">
+      <Filter>libmad</Filter>
+    </ClInclude>
+    <ClInclude Include="MadDecodec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlLink.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlSpan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlTextNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlSessionStorage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlConsole.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlAttributes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libogg-1.3.2\include\ogg\ogg.h">
+      <Filter>libogg</Filter>
+    </ClInclude>
+    <ClInclude Include="libogg-1.3.2\include\ogg\os_types.h">
+      <Filter>libogg</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpParser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlAudioDestinationNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlAudioParam.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlAudioBuffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlAudioBufferSourceNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlWebSocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlTextarea.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlRect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Events.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Mutexs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlStyleElement.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlUL.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlLI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpFileCache.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGl2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlIFrame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlScreen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XiaobaiEngine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="JSVMInterface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlImgClass.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalClass.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlEventTarget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlElement.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlDocument.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlCanvas.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlCanvasRenderingContext2D.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HTML5Color.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenglFBO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageDecoderInterface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenglContext.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlWebGLRenderingContext.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlLocation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemInterface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlNavigator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlDomParser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Markup.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlXMLHttpRequest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileIOInterface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpRequestInterface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlImageData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlScript.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlAudio.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlDiv.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlStyle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlInput.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Base64.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioInterface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlEvent.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlLocalStorage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayBuffer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\AcmCodec.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\AudioWIN32.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\DSoundOut.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\HttpRequestWIN32.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\ImageDecoderWIN32.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\SystemInterfaceWIN32.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\esShader.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\esShapes.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\esTransform.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\esUtil.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\Win32\esUtil_TGA.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\Win32\esUtil_win32.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\attribute.c">
+      <Filter>google-gumbo-parser</Filter>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\char_ref.c">
+      <Filter>google-gumbo-parser</Filter>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\error.c">
+      <Filter>google-gumbo-parser</Filter>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\parser.c">
+      <Filter>google-gumbo-parser</Filter>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\string_buffer.c">
+      <Filter>google-gumbo-parser</Filter>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\string_piece.c">
+      <Filter>google-gumbo-parser</Filter>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\tag.c">
+      <Filter>google-gumbo-parser</Filter>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\tokenizer.c">
+      <Filter>google-gumbo-parser</Filter>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\utf8.c">
+      <Filter>google-gumbo-parser</Filter>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\util.c">
+      <Filter>google-gumbo-parser</Filter>
+    </ClCompile>
+    <ClCompile Include="google-gumbo-parser\src\vector.c">
+      <Filter>google-gumbo-parser</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlCanvasGradient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlLinearGradient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlCookie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlAudioContext.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlGainNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlAudioNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\bit.c">
+      <Filter>libmad</Filter>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\decoder.c">
+      <Filter>libmad</Filter>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\fixed.c">
+      <Filter>libmad</Filter>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\frame.c">
+      <Filter>libmad</Filter>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\huffman.c">
+      <Filter>libmad</Filter>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\layer3.c">
+      <Filter>libmad</Filter>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\layer12.c">
+      <Filter>libmad</Filter>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\stream.c">
+      <Filter>libmad</Filter>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\synth.c">
+      <Filter>libmad</Filter>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\timer.c">
+      <Filter>libmad</Filter>
+    </ClCompile>
+    <ClCompile Include="libmad-0.15.1b\version.c">
+      <Filter>libmad</Filter>
+    </ClCompile>
+    <ClCompile Include="MadDecodec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlLink.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlSpan.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlTextNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlSessionStorage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlConsole.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlAttributes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="libogg-1.3.2\src\bitwise.c">
+      <Filter>libogg</Filter>
+    </ClCompile>
+    <ClCompile Include="libogg-1.3.2\src\framing.c">
+      <Filter>libogg</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpParser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlAudioDestinationNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlAudioParam.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlAudioBuffer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlAudioBufferSourceNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlWebSocket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketInterface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlTextarea.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlRect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Events.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Mutexs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlStyleElement.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlUL.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlLI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpFileCache.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGl2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlIFrame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlScreen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="XiaobaiEngine.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="XiaobaiEngine.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

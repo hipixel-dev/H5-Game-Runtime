@@ -1,0 +1,35 @@
+﻿生成启动时间为 2015/6/26 19:09:13。
+     1>项目“D:\搜狗高速下载\google-gumbo-parser-v0.10.1-5-g47d36f9\google-gumbo-parser-47d36f9\visualc\gumbo.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\src\attribute.c ..\src\char_ref.c ..\src\error.c ..\src\parser.c ..\src\string_buffer.c ..\src\string_piece.c ..\src\tag.c ..\src\tokenizer.c ..\src\utf8.c ..\src\util.c ..\src\vector.c
+     1>cl : 命令行 warning D9025: 正在重写“/sdl-”(用“/GS-”)
+         vector.c
+         util.c
+         utf8.c
+         tokenizer.c
+         tag.c
+         string_piece.c
+         string_buffer.c
+         parser.c
+         error.c
+         char_ref.c
+         attribute.c
+         正在生成代码...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"D:\搜狗高速下载\google-gumbo-parser-v0.10.1-5-g47d36f9\google-gumbo-parser-47d36f9\visualc\Debug\gumbo.lib" /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" /NOLOGO Debug\attribute.obj
+         Debug\char_ref.obj
+         Debug\error.obj
+         Debug\parser.obj
+         Debug\string_buffer.obj
+         Debug\string_piece.obj
+         Debug\tag.obj
+         Debug\tokenizer.obj
+         Debug\utf8.obj
+         Debug\util.obj
+         Debug\vector.obj
+         gumbo.vcxproj -> D:\搜狗高速下载\google-gumbo-parser-v0.10.1-5-g47d36f9\google-gumbo-parser-47d36f9\visualc\Debug\gumbo.lib
+     1>已完成生成项目“D:\搜狗高速下载\google-gumbo-parser-v0.10.1-5-g47d36f9\google-gumbo-parser-47d36f9\visualc\gumbo.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.87
